@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="?attr/actionBarSize"
+    tools:context=".ui.contact.ContactFragment">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/follow"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_below="@id/heading"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/linkedin_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/linkedin_url" />
+
+    <TextView
+        android:id="@+id/caption1"
+        android:layout_toEndOf="@+id/icon1"
+        android:layout_below="@id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/linkedin"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_below="@id/icon1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/github_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/linkedin_url" />
+
+    <TextView
+        android:id="@+id/caption2"
+        android:layout_toEndOf="@+id/icon2"
+        android:layout_below="@id/caption1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/github"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_below="@id/icon2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/wix_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/linkedin_url" />
+
+    <TextView
+        android:id="@+id/caption3"
+        android:layout_toEndOf="@+id/icon3"
+        android:layout_below="@id/caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/website"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_below="@id/icon3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/instagram_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp"
+        android:contentDescription="@string/linkedin_url" />
+
+    <TextView
+        android:id="@+id/caption4"
+        android:layout_toEndOf="@+id/icon4"
+        android:layout_below="@id/caption3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/instagram"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_fan"
+        android:layout_below="@id/caption4"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="fan.json"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/visit"
+        android:layout_below="@id/lav_fan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Visit Again!"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        android:textStyle="bold" />
+
+</RelativeLayout>

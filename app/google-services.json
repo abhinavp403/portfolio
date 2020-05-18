@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "438830502917",
+    "firebase_url": "https://portfolio-1586e.firebaseio.com",
+    "project_id": "portfolio-1586e",
+    "storage_bucket": "portfolio-1586e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438830502917:android:fd533c47310ebce692b86c",
+        "android_client_info": {
+          "package_name": "com.example.abhinav.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438830502917-ka08qj7q2pghls7go7m93opd8ksd8n6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abhinav.portfolio",
+            "certificate_hash": "d1c5c63ca40fc81a17026e116e9662dd555f79bb"
+          }
+        },
+        {
+          "client_id": "438830502917-5o76ke1dlu3rdn3hksbv0ogk8ghl1im4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACSSwJRE0-xZVzCQ8F9UrrBELQGh7ntb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438830502917-5o76ke1dlu3rdn3hksbv0ogk8ghl1im4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

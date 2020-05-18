@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.abhinav.portfolio.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.example.abhinav.portfolio.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_home_second_to_workFragment"
+            app:destination="@id/nav_work" />
+        <action
+            android:id="@+id/action_nav_home_second_to_educationFragment"
+            app:destination="@id/nav_education" />
+        <action
+            android:id="@+id/action_nav_home_second_to_skillsFragment"
+            app:destination="@id/nav_skills" />
+        <action
+            android:id="@+id/action_nav_home_second_to_contactFragment"
+            app:destination="@id/nav_contact" />
+        <action
+            android:id="@+id/action_nav_home_second_to_projectsFragment"
+            app:destination="@id/nav_projects" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_work"
+        android:name="com.example.abhinav.portfolio.ui.work.WorkFragment"
+        android:label="@string/menu_work"
+        tools:layout="@layout/fragment_work" >
+        <action
+            android:id="@+id/action_workFragment_to_nav_home_second"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_education"
+        android:name="com.example.abhinav.portfolio.ui.education.EducationFragment"
+        android:label="@string/menu_education"
+        tools:layout="@layout/fragment_education" >
+        <action
+            android:id="@+id/action_educationFragment_to_nav_home_second"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_skills"
+        android:name="com.example.abhinav.portfolio.ui.skills.SkillsFragment"
+        android:label="@string/menu_skills"
+        tools:layout="@layout/fragment_skills" >
+        <action
+            android:id="@+id/action_skillsFragment_to_nav_home_second"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.abhinav.portfolio.ui.contact.ContactFragment"
+        android:label="@string/menu_contact"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment_to_nav_home_second"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_projects"
+        android:name="com.example.abhinav.portfolio.ui.projects.ProjectsFragment"
+        android:label="@string/menu_projects"
+        tools:layout="@layout/fragment_projects" >
+        <action
+            android:id="@+id/action_projectsFragment_to_nav_home_second"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+
+</navigation>
