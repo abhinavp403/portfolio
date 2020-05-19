@@ -1,4 +1,4 @@
-package com.example.abhinav.portfolio.ui.home
+package com.dev.abhinav.portfolio.ui.home
 
 import android.os.Bundle
 import android.util.Log
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.example.abhinav.portfolio.R
+import com.dev.abhinav.portfolio.R
 import com.google.firebase.firestore.FirebaseFirestore
 
 class HomeFragment : Fragment() {
@@ -38,7 +38,7 @@ class HomeFragment : Fragment() {
                             movie.text = document.getString("movie")
                         if(document.getString("book") != null)
                             book.text = document.getString("book")
-                        if(document.getString("songbook") != null)
+                        if(document.getString("song") != null)
                             song.text = document.getString("song")
                     }
                 } else {

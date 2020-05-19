@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.abhinav.portfolio.ui.home.HomeFragment"
+        android:name="com.dev.abhinav.portfolio.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_home_second"
-        android:name="com.example.abhinav.portfolio.ui.home.HomeSecondFragment"
+        android:name="com.dev.abhinav.portfolio.ui.home.HomeSecondFragment"
         android:label="@string/home_second"
         tools:layout="@layout/fragment_home_second">
         <action
@@ -45,7 +45,7 @@
 
     <fragment
         android:id="@+id/nav_work"
-        android:name="com.example.abhinav.portfolio.ui.work.WorkFragment"
+        android:name="com.dev.abhinav.portfolio.ui.work.WorkFragment"
         android:label="@string/menu_work"
         tools:layout="@layout/fragment_work" >
         <action
@@ -54,7 +54,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_education"
-        android:name="com.example.abhinav.portfolio.ui.education.EducationFragment"
+        android:name="com.dev.abhinav.portfolio.ui.education.EducationFragment"
         android:label="@string/menu_education"
         tools:layout="@layout/fragment_education" >
         <action
@@ -63,7 +63,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_skills"
-        android:name="com.example.abhinav.portfolio.ui.skills.SkillsFragment"
+        android:name="com.dev.abhinav.portfolio.ui.skills.SkillsFragment"
         android:label="@string/menu_skills"
         tools:layout="@layout/fragment_skills" >
         <action
@@ -72,7 +72,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_contact"
-        android:name="com.example.abhinav.portfolio.ui.contact.ContactFragment"
+        android:name="com.dev.abhinav.portfolio.ui.contact.ContactFragment"
         android:label="@string/menu_contact"
         tools:layout="@layout/fragment_contact" >
         <action
@@ -81,7 +81,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_projects"
-        android:name="com.example.abhinav.portfolio.ui.projects.ProjectsFragment"
+        android:name="com.dev.abhinav.portfolio.ui.projects.ProjectsFragment"
         android:label="@string/menu_projects"
         tools:layout="@layout/fragment_projects" >
         <action

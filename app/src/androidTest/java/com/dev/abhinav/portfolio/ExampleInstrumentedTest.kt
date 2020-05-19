@@ -1,4 +1,4 @@
-package com.example.abhinav.portfolio
+package com.dev.abhinav.portfolio
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

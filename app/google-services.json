@@ -8,6 +8,35 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:438830502917:android:a702da11d2fdd3b292b86c",
+        "android_client_info": {
+          "package_name": "com.dev.abhinav.portfolio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "438830502917-5o76ke1dlu3rdn3hksbv0ogk8ghl1im4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACSSwJRE0-xZVzCQ8F9UrrBELQGh7ntb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "438830502917-5o76ke1dlu3rdn3hksbv0ogk8ghl1im4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:438830502917:android:fd533c47310ebce692b86c",
         "android_client_info": {
           "package_name": "com.example.abhinav.portfolio"

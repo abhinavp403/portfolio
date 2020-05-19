@@ -1,4 +1,4 @@
-package com.example.abhinav.portfolio
+package com.dev.abhinav.portfolio
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.abhinav.portfolio.ui.education
+package com.dev.abhinav.portfolio.ui.education
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.diegodobelo.expandingview.ExpandingList
-import com.example.abhinav.portfolio.R
+import com.dev.abhinav.portfolio.R
 
 class EducationFragment : Fragment() {
 

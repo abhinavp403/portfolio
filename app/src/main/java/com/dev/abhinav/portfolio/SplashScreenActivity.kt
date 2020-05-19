@@ -1,4 +1,4 @@
-package com.example.abhinav.portfolio
+package com.dev.abhinav.portfolio
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -34,14 +34,14 @@ class SplashScreenActivity : AppCompatActivity() {
         middleAnimation = AnimationUtils.loadAnimation(this, R.anim.middle_animation)
         bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
 
-        first = findViewById(R.id.first_line);
-        second = findViewById(R.id.second_line);
-        third = findViewById(R.id.third_line);
-        fourth = findViewById(R.id.fourth_line);
-        fifth = findViewById(R.id.fifth_line);
-        sixth = findViewById(R.id.sixth_line);
-        a = findViewById(R.id.a);
-        slogan = findViewById(R.id.tagLine);
+        first = findViewById(R.id.first_line)
+        second = findViewById(R.id.second_line)
+        third = findViewById(R.id.third_line)
+        fourth = findViewById(R.id.fourth_line)
+        fifth = findViewById(R.id.fifth_line)
+        sixth = findViewById(R.id.sixth_line)
+        a = findViewById(R.id.a)
+        slogan = findViewById(R.id.tagLine)
 
         first.startAnimation(topAnimation)
         first.startAnimation(topAnimation)
