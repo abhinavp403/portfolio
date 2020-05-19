@@ -64,12 +64,8 @@ class SkillsFragment : Fragment() {
             item.createSubItems(subItems.size)
             for (i in 0 until item.subItemsCount) {
                 val view = item.getSubItemView(i)
-                configureSubItem(view, subItems[i])
+                (view.findViewById(R.id.sub_heading) as TextView).text = subItems[i]
             }
         }
-    }
-
-    private fun configureSubItem(view: View, subTitle: String) {
-        (view.findViewById(R.id.sub_heading) as TextView).text = subTitle
     }
 }

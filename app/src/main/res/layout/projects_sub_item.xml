@@ -22,6 +22,7 @@
         android:layout_marginStart="8dp"
         android:gravity="start"
         android:textColor="@color/black"
+        android:autoLink="web"
         android:textSize="15sp"
         android:textStyle="normal"/>
 
