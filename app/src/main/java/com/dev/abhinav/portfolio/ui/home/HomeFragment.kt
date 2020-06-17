@@ -12,11 +12,10 @@ import com.google.firebase.firestore.FirebaseFirestore
 
 class HomeFragment : Fragment() {
 
-    private var db = FirebaseFirestore.getInstance()
+    private var db = FirebaseFirestore.getInstance().collection("Week")
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        return root
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -27,7 +26,7 @@ class HomeFragment : Fragment() {
         val book: TextView = view.findViewById(R.id.book)
         val song: TextView = view.findViewById(R.id.song)
 
-        db.collection("Week").get()
+        db.get()
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     for (document in task.result!!) {
@@ -45,26 +44,5 @@ class HomeFragment : Fragment() {
                     Log.d("TAG", "Error getting documents.", task.exception)
                 }
             }
-
-        /*database = FirebaseDatabase.getInstance().getReference("Quotes").child("quote").child("quote")
-        val postListener = object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                // Get Post object and use the values to update the UI
-                try {
-                    Log.d("TAG", "loadPost:onDataChanged")
-                    Log.d("TAG", dataSnapshot.toString())
-                    val post = dataSnapshot.getValue()
-                    quote.text = post.toString()
-                }
-                catch(e: Exception) {
-                    e.printStackTrace()
-                }
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-                Log.d("TAG", "loadPost:onCancelled", databaseError.toException())
-            }
-        }
-        database.addValueEventListener(postListener)*/
     }
 }
