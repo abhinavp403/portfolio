@@ -25,6 +25,14 @@ class WorkFragment : Fragment() {
 
     private fun createItems() {
         addItem(
+            "Information Resources Group", arrayOf("Java Developer"), arrayOf("June 2020 - Present"),
+            arrayOf("- Performing parallel testing on enviromnent/test applications and provide feedback to business analysts\n" +
+                    "- Worked on MVC architecture to code DAOs, Services, Processor classes\n" +
+                    "- Converted Hibernate to JBDC to optimize transaction control processes\n" +
+                    "- Coded in Java on Spring Framework using SQL Database in an agile environment"),
+            R.drawable.irg_icon
+        )
+        addItem(
             "Harvesting Farmers Network", arrayOf("Mobile Development Intern"), arrayOf("June 2019 - August 2019"),
             arrayOf("- Interned with Agricultural startup to add multiple features to Android app to improve interface and user experience\n" +
                     "- Implemented feature to share in-app posts on WhatsApp and Facebook using Facebook API and Firebase Dynamic Links to achieve network traffic and promote app on social media\n" +

@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_nav_home_second_to_projectsFragment"
             app:destination="@id/nav_projects" />
+        <action
+            android:id="@+id/action_nav_home_second_to_otherappsFragment"
+            app:destination="@id/nav_projects" />
     </fragment>
 
     <fragment
@@ -83,6 +86,15 @@
         android:id="@+id/nav_projects"
         android:name="com.dev.abhinav.portfolio.ui.projects.ProjectsFragment"
         android:label="@string/menu_projects"
+        tools:layout="@layout/fragment_projects" >
+        <action
+            android:id="@+id/action_projectsFragment_to_nav_home_second"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_otherapps"
+        android:name="com.dev.abhinav.portfolio.ui.apps.OtherAppsFragment"
+        android:label="@string/menu_otherapps"
         tools:layout="@layout/fragment_projects" >
         <action
             android:id="@+id/action_projectsFragment_to_nav_home_second"

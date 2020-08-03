@@ -31,7 +31,7 @@ class SkillsFragment : Fragment() {
         )
         addItem(
             "Programming Languages",
-            arrayOf("Java, Kotlin, Python, C++, JavaScript, HTML, Node.js"),
+            arrayOf("Java, Kotlin, Python, C++, JavaScript, HTML"),
             R.drawable.prg_icon
         )
         addItem(
@@ -40,13 +40,18 @@ class SkillsFragment : Fragment() {
             R.drawable.database_icon
         )
         addItem(
+            "Frameworks",
+            arrayOf("Spring, Hibernate"),
+            R.drawable.framework_icon
+        )
+        addItem(
             "Techniques",
-            arrayOf("Machine Learning, App Development, Web Programming, Image Processing"),
+            arrayOf("Software Engineering, App Development, Machine Learning, Web Programming, Image Processing"),
             R.drawable.techniques_icon
         )
         addItem(
             "Soft Skills",
-            arrayOf("Leadership, Communication, Organized, Hard Worker, Punctual"),
+            arrayOf("Leadership, Communication, Organization, Hard Worker, Punctual"),
             R.drawable.softskills_icon
         )
     }

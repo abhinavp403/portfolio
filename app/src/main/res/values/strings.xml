@@ -45,4 +45,9 @@
     <string name="projects">Projects</string>
     <string name="menu_projects">Projects</string>
     <string name="song_of_the_week">Song of the Week</string>
+    <string name="menu_otherapps">Other Apps</string>
+    <string name="otherapps">Other Apps</string>
+    <string name="apps_heading">Here Are Other Apps That I\'ve Published</string>
+    <string name="category_quotes">Category Quotes</string>
+    <string name="smart_music_player">Smart Music Player</string>
 </resources>

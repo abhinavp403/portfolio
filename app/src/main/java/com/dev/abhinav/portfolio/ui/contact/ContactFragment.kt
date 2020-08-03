@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.TextView
 import com.airbnb.lottie.LottieAnimationView
 import com.dev.abhinav.portfolio.R
 
@@ -23,11 +24,22 @@ class ContactFragment : Fragment() {
         val icon2: ImageView = view.findViewById(R.id.icon2)
         val icon3: ImageView = view.findViewById(R.id.icon3)
         val icon4: ImageView = view.findViewById(R.id.icon4)
+        val caption1: TextView = view.findViewById(R.id.caption1)
+        val caption2: TextView = view.findViewById(R.id.caption2)
+        val caption3: TextView = view.findViewById(R.id.caption3)
+        val caption4: TextView = view.findViewById(R.id.caption4)
         val fan: LottieAnimationView = view.findViewById(R.id.lav_fan)
         fan.playAnimation()
 
-
         icon1.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse("https://www.linkedin.com/in/abhinav-prakash-05")
+            startActivity(intent)
+        }
+
+        caption1.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
             intent.addCategory(Intent.CATEGORY_BROWSABLE)
@@ -43,6 +55,14 @@ class ContactFragment : Fragment() {
             startActivity(intent)
         }
 
+        caption2.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse("https://github.com/abhinavp403")
+            startActivity(intent)
+        }
+
         icon3.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
@@ -51,7 +71,23 @@ class ContactFragment : Fragment() {
             startActivity(intent)
         }
 
+        caption3.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse("https://abhinavp403.wixsite.com/website")
+            startActivity(intent)
+        }
+
         icon4.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse("https://www.instagram.com/abhinavp403/")
+            startActivity(intent)
+        }
+
+        caption4.setOnClickListener {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
             intent.addCategory(Intent.CATEGORY_BROWSABLE)
