@@ -1,7 +1,7 @@
 # portfolio
 
 An app which looks at my life.
-It has sections about my work history, education, personal projects, acquired skills and contact information.
+It has sections about my work history, education, personal projects, acquired skills, other apps I've published and contact information
 
 The home page will get updated every Sunday evening with a quote, movie, book and song of my choice
 
