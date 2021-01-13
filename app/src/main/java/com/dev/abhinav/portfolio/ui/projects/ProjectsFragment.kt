@@ -25,6 +25,15 @@ class ProjectsFragment : Fragment() {
 
     private fun createItems() {
         addItem(
+            "Stock Update Google Sheets", arrayOf("September 2020"),
+            arrayOf("Coded a python script which updates the stocks on my watchlist on a daily basis daily. " +
+                    "Finnhub API retrieves essential information such as open, close, low, high values and puts them in a tabular form in google sheets. " +
+                    "Project is uploaded on Google Console, which creates a json file to be shared on your sheets to edit it and establishes an intermediary bewteen code and Google Sheets. " +
+                    "It takes about a minute to update data for 20 stocks. " +
+                    "https://github.com/abhinavp403/stock-update-sheets"),
+            R.drawable.one
+        )
+        addItem(
             "Guide Dog", arrayOf("November 2017"),
             arrayOf("An Android app designed for blind people to help them to identify objects in front of them which in turn " +
                     "helps them navigate around places. It takes a picture using an inbuilt camera that recognizes the object " +
@@ -72,7 +81,7 @@ class ProjectsFragment : Fragment() {
         )
         addItem(
             "Misc. Android Studio Projects", arrayOf("August 2017 - Present"),
-            arrayOf("Calculator\n" + "Weather App\n" + "Tic-Tac-Toe Game\n" + "Sound Recorder\n" + "Static Google Map\n" + "Dice Roller"),
+            arrayOf("Calculator\n" + "Weather App\n" + "Sound Recorder\n" + "Static Google Map\n" + "Dice Roller"),
             R.drawable.seven
         )
     }

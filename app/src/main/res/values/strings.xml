@@ -50,4 +50,6 @@
     <string name="apps_heading">Here Are Other Apps That I\'ve Published</string>
     <string name="category_quotes">Category Quotes</string>
     <string name="smart_music_player">Smart Music Player</string>
+    <string name="tic_tac_toe">Tic-Tac-Toe</string>
+    <string name="movie_rater">Movie Rater</string>
 </resources>

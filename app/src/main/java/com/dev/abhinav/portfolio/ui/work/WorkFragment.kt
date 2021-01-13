@@ -26,10 +26,10 @@ class WorkFragment : Fragment() {
     private fun createItems() {
         addItem(
             "Information Resources Group", arrayOf("Java Developer"), arrayOf("June 2020 - Present"),
-            arrayOf("- Performing parallel testing on enviromnent/test applications and provide feedback to business analysts\n" +
-                    "- Worked on MVC architecture to code DAOs, Services, Processor classes\n" +
-                    "- Converted Hibernate to JBDC to optimize transaction control processes\n" +
-                    "- Coded in Java on Spring Framework using SQL Database in an agile environment"),
+            arrayOf("- Refactored Hibernate code to JDBC to optimize transaction control processes in client's web application\n" +
+                    "- Coded using MVC Architecture in Java on Spring Framework using SQL Database in an Agile environment\n" +
+                    "- Performed parallel and uniting tests for quality assurance and provided feedback to business analysts\n" +
+                    "- Peer reviews of code conducted regularly to ensure highest quality and consistency"),
             R.drawable.irg_icon
         )
         addItem(

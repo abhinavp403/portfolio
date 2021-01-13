@@ -24,7 +24,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/cq__app_icon"
+        android:src="@drawable/cq_app_icon"
         android:padding="5dp"
         android:layout_marginStart="20dp" />
 
@@ -62,6 +62,54 @@
         android:layout_marginStart="20dp"
         android:gravity="center_vertical"
         android:text="@string/smart_music_player"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_below="@id/icon2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ttt_app_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/caption3"
+        android:layout_toEndOf="@+id/icon3"
+        android:layout_below="@id/caption2"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/tic_tac_toe"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_below="@id/icon3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/movierater_app_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/caption4"
+        android:layout_toEndOf="@+id/icon4"
+        android:layout_below="@id/caption3"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/movie_rater"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"/>

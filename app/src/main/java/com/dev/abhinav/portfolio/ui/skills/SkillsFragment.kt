@@ -26,7 +26,7 @@ class SkillsFragment : Fragment() {
     private fun createItems() {
         addItem(
             "Mobile Development",
-            arrayOf("Java, Kotlin, Flutter, Androidx, Firestore"),
+            arrayOf("Java, Kotlin, Flutter, Firestore, Retrofit, UI Design"),
             R.drawable.mobdev_icon
         )
         addItem(
@@ -36,7 +36,7 @@ class SkillsFragment : Fragment() {
         )
         addItem(
             "Database",
-            arrayOf("SQL, NoSQL, Firebase, MongoDB"),
+            arrayOf("SQL, NoSQL, Firebase, MongoDB, AWS Amplify"),
             R.drawable.database_icon
         )
         addItem(
@@ -51,7 +51,7 @@ class SkillsFragment : Fragment() {
         )
         addItem(
             "Soft Skills",
-            arrayOf("Leadership, Communication, Organization, Hard Worker, Punctual"),
+            arrayOf("Leadership, Communication, Organization, Responsibility, Punctuality"),
             R.drawable.softskills_icon
         )
     }
