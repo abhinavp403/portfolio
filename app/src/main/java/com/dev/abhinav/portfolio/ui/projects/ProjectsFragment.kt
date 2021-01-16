@@ -39,7 +39,7 @@ class ProjectsFragment : Fragment() {
                     "helps them navigate around places. It takes a picture using an inbuilt camera that recognizes the object " +
                     "using Clairfai API, speaks out resultant object and detects its distance from user using ultrasound sensors connected to Arduino. " +
                     "https://github.com/abhinavp403/GuideDog"),
-            R.drawable.one
+            R.drawable.two
         )
         addItem(
             "TravelPlanner", arrayOf("December 2019"),
@@ -48,28 +48,28 @@ class ProjectsFragment : Fragment() {
                     "ExpressJS and retrives data from cloud MongoDB. The distance and travel time between places was calculated in real time " +
                     "using Google's distance matrix API. The webpage was designed using HTML, CSS and bootstrap.\n " +
                     "https://github.com/abhinavp403/TravelPlanners"),
-            R.drawable.two
+            R.drawable.three
         )
         addItem(
-            "Walk Alert", arrayOf("Decmber 2018"),
+            "Walk Alert", arrayOf("December 2018"),
             arrayOf("Android app in which gives sound alert/vibration to users to start walking for 5 minutes for every 1 hour of sitting. " +
                     "Machine learning techniques were used in Python to train dataset to distinguish between walking and sitting. Purpose " +
                     "of app is to remind employees with desk jobs to move around during their office times.\n" +
                     "https://github.com/abhinavp403/MyActivitiesSolution"),
-            R.drawable.three
+            R.drawable.four
         )
         addItem(
             "Sign 2 Speech", arrayOf("November 2018"),
             arrayOf("An Android camera app which detects sign language using machine learning algorithms and speaks words aloud " +
                     "in real-time. Tested and trained alphabet signs using Python and converted text-to-speech using Apple Speech API."),
-            R.drawable.four
+            R.drawable.five
         )
         addItem(
-            "Collabarter", arrayOf("Febrauary 2017"),
+            "Collabarter", arrayOf("February 2017"),
             arrayOf("A website which connects college students on the basis of opposite strengths and weaknesses for the purpose of " +
                     "tutoring. Database of student profiles were stored using Java and website was created using HTML, CSS, PHP. \n" +
                     "https://devpost.com/software/collabarter"),
-            R.drawable.five
+            R.drawable.six
         )
         addItem(
             "FacialZheimer", arrayOf("March 2017"),
@@ -77,12 +77,12 @@ class ProjectsFragment : Fragment() {
                     "the app using JavaScript, HTML and is used by taking a picture on Raspberry Pi camera, matching the image from " +
                     "database and speaking subsequent the name.\n" +
                     "https://devpost.com/software/facialzheimer"),
-            R.drawable.six
+            R.drawable.seven
         )
         addItem(
             "Misc. Android Studio Projects", arrayOf("August 2017 - Present"),
             arrayOf("Calculator\n" + "Weather App\n" + "Sound Recorder\n" + "Static Google Map\n" + "Dice Roller"),
-            R.drawable.seven
+            R.drawable.eight
         )
     }
 

@@ -36,7 +36,7 @@ class SkillsFragment : Fragment() {
         )
         addItem(
             "Database",
-            arrayOf("SQL, NoSQL, Firebase, MongoDB, AWS Amplify"),
+            arrayOf("Oracle SQL, NoSQL, Firebase, MongoDB, AWS Amplify"),
             R.drawable.database_icon
         )
         addItem(

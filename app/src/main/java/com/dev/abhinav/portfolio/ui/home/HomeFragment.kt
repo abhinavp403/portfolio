@@ -30,7 +30,6 @@ class HomeFragment : Fragment() {
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     for (document in task.result!!) {
-                        //Log.d("TAG", document.id + " => " + document.getString("quote"))
                         if(document.getString("quote") != null)
                             quote.text = document.getString("quote")
                         if(document.getString("movie") != null)

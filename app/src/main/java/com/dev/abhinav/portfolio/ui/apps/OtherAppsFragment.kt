@@ -80,7 +80,7 @@ class OtherAppsFragment : Fragment() {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
             intent.addCategory(Intent.CATEGORY_BROWSABLE)
-            intent.data = Uri.parse("")
+            intent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.dev.abhinav.movierater")
             startActivity(intent)
         }
 
@@ -88,7 +88,7 @@ class OtherAppsFragment : Fragment() {
             val intent = Intent()
             intent.action = Intent.ACTION_VIEW
             intent.addCategory(Intent.CATEGORY_BROWSABLE)
-            intent.data = Uri.parse("")
+            intent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.dev.abhinav.movierater")
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
