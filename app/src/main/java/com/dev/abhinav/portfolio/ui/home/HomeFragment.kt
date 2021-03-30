@@ -27,9 +27,9 @@ class HomeFragment : Fragment() {
         val song: TextView = view.findViewById(R.id.song)
 
         db.get()
-            .addOnCompleteListener { task ->
-                if (task.isSuccessful) {
-                    for (document in task.result!!) {
+            .addOnCompleteListener {
+                if (it.isSuccessful) {
+                    for (document in it.result!!) {
                         if(document.getString("quote") != null)
                             quote.text = document.getString("quote")
                         if(document.getString("movie") != null)
@@ -40,7 +40,7 @@ class HomeFragment : Fragment() {
                             song.text = document.getString("song")
                     }
                 } else {
-                    Log.d("TAG", "Error getting documents.", task.exception)
+                    Log.d("TAG", "Error getting documents.", it.exception)
                 }
             }
     }

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/otherapps_page_backg"
     tools:context=".ui.contact.ContactFragment">
 
     <TextView
@@ -110,6 +111,30 @@
         android:layout_marginStart="20dp"
         android:gravity="center_vertical"
         android:text="@string/movie_rater"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/icon5"
+        android:layout_below="@id/icon4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ts_app_icon"
+        android:padding="5dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/caption5"
+        android:layout_toEndOf="@+id/icon4"
+        android:layout_below="@id/caption4"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/tennis_stats"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:textStyle="bold"/>

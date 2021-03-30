@@ -26,7 +26,7 @@ class SkillsFragment : Fragment() {
     private fun createItems() {
         addItem(
             "Mobile Development",
-            arrayOf("Java, Kotlin, Flutter, Firestore, Retrofit, UI Design"),
+            arrayOf("Java, Kotlin, Flutter, Firestore, Retrofit, JetPack"),
             R.drawable.mobdev_icon
         )
         addItem(
@@ -57,15 +57,10 @@ class SkillsFragment : Fragment() {
     }
 
     private fun addItem(skill: String, subItems: Array<String>, iconRes: Int) {
-        //Let's create an item with R.layout.expanding_layout_work
         val item = mExpandingList!!.createNewItem(R.layout.expanding_layout_skills)
-
-        //If item creation is successful, let's configure it
         if (item != null) {
             item.setIndicatorIconRes(iconRes)
-            //It is possible to get any view inside the inflated layout. Let's set the text in the item
             (item.findViewById(R.id.title) as TextView).text = skill
-
             item.createSubItems(subItems.size)
             for (i in 0 until item.subItemsCount) {
                 val view = item.getSubItemView(i)

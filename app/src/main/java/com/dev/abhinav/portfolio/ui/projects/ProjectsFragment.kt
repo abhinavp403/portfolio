@@ -25,13 +25,21 @@ class ProjectsFragment : Fragment() {
 
     private fun createItems() {
         addItem(
-            "Stock Update Google Sheets", arrayOf("September 2020"),
-            arrayOf("Coded a python script which updates the stocks on my watchlist on a daily basis daily. " +
-                    "Finnhub API retrieves essential information such as open, close, low, high values and puts them in a tabular form in google sheets. " +
-                    "Project is uploaded on Google Console, which creates a json file to be shared on your sheets to edit it and establishes an intermediary bewteen code and Google Sheets. " +
-                    "It takes about a minute to update data for 20 stocks. " +
-                    "https://github.com/abhinavp403/stock-update-sheets"),
+            "Recipe App", arrayOf("February 2021"),
+            arrayOf("App to retrieve recipe details from recipesapi.herokuapp.com and display it in recycler view with categories differentiated " +
+                    "as toggleable chips. App coded using JetPack Compost library in Android Studio Canary which uses kotlin to replace xml for UI specs. " +
+                    "MVVM architecture used.\n" +
+                    "https://github.com/abhinavp403/RecipeApp"),
             R.drawable.one
+        )
+        addItem(
+            "Stock Update Google Sheets", arrayOf("September 2020"),
+            arrayOf("Coded a python script which updates the stocks on my watchlist on a daily basis daily. Finnhub API retrieves information " +
+                    "such as open, close, low, high values and puts them in a tabular form in google sheets. Project is uploaded on Google Console, which " +
+                    "creates a json file to be shared on your sheets to edit it and establishes an intermediary between code and Google Sheets. " +
+                    "It takes about a minute to update data for 20 stocks.\n" +
+                    "https://github.com/abhinavp403/stock-update-sheets"),
+            R.drawable.two
         )
         addItem(
             "Guide Dog", arrayOf("November 2017"),
@@ -39,16 +47,16 @@ class ProjectsFragment : Fragment() {
                     "helps them navigate around places. It takes a picture using an inbuilt camera that recognizes the object " +
                     "using Clairfai API, speaks out resultant object and detects its distance from user using ultrasound sensors connected to Arduino. " +
                     "https://github.com/abhinavp403/GuideDog"),
-            R.drawable.two
+            R.drawable.three
         )
         addItem(
             "TravelPlanner", arrayOf("December 2019"),
             arrayOf("A web app which generates the most optimal itinerary of tourist sites/restaurants based on shortest distance and " +
                     "earliest deadline scheduling algorithms of the places provided by user input. It runs on a local server hosted using " +
                     "ExpressJS and retrives data from cloud MongoDB. The distance and travel time between places was calculated in real time " +
-                    "using Google's distance matrix API. The webpage was designed using HTML, CSS and bootstrap.\n " +
+                    "using Google's distance matrix API. The webpage was designed using HTML, CSS and bootstrap.\n" +
                     "https://github.com/abhinavp403/TravelPlanners"),
-            R.drawable.three
+            R.drawable.four
         )
         addItem(
             "Walk Alert", arrayOf("December 2018"),
@@ -56,20 +64,20 @@ class ProjectsFragment : Fragment() {
                     "Machine learning techniques were used in Python to train dataset to distinguish between walking and sitting. Purpose " +
                     "of app is to remind employees with desk jobs to move around during their office times.\n" +
                     "https://github.com/abhinavp403/MyActivitiesSolution"),
-            R.drawable.four
+            R.drawable.five
         )
         addItem(
             "Sign 2 Speech", arrayOf("November 2018"),
             arrayOf("An Android camera app which detects sign language using machine learning algorithms and speaks words aloud " +
                     "in real-time. Tested and trained alphabet signs using Python and converted text-to-speech using Apple Speech API."),
-            R.drawable.five
+            R.drawable.six
         )
         addItem(
             "Collabarter", arrayOf("February 2017"),
             arrayOf("A website which connects college students on the basis of opposite strengths and weaknesses for the purpose of " +
-                    "tutoring. Database of student profiles were stored using Java and website was created using HTML, CSS, PHP. \n" +
+                    "tutoring. Database of student profiles were stored using Java and website was created using HTML, CSS, PHP.\n" +
                     "https://devpost.com/software/collabarter"),
-            R.drawable.six
+            R.drawable.seven
         )
         addItem(
             "FacialZheimer", arrayOf("March 2017"),
@@ -77,25 +85,20 @@ class ProjectsFragment : Fragment() {
                     "the app using JavaScript, HTML and is used by taking a picture on Raspberry Pi camera, matching the image from " +
                     "database and speaking subsequent the name.\n" +
                     "https://devpost.com/software/facialzheimer"),
-            R.drawable.seven
+            R.drawable.eight
         )
         addItem(
             "Misc. Android Studio Projects", arrayOf("August 2017 - Present"),
             arrayOf("Calculator\n" + "Weather App\n" + "Sound Recorder\n" + "Static Google Map\n" + "Dice Roller"),
-            R.drawable.eight
+            R.drawable.nine
         )
     }
 
     private fun addItem(title: String, dates: Array<String>, subItems: Array<String>, iconRes: Int) {
-        //Let's create an item with R.layout.expanding_layout_work
         val item = mExpandingList!!.createNewItem(R.layout.expanding_layout_projects)
-
-        //If item creation is successful, let's configure it
         if (item != null) {
             item.setIndicatorIconRes(iconRes)
-            //It is possible to get any view inside the inflated layout. Let's set the text in the item
             (item.findViewById(R.id.title) as TextView).text = title
-
             item.createSubItems(subItems.size)
             for (i in 0 until item.subItemsCount) {
                 val view = item.getSubItemView(i)

@@ -23,10 +23,12 @@ class OtherAppsFragment : Fragment() {
         val icon2: ImageView = view.findViewById(R.id.icon2)
         val icon3: ImageView = view.findViewById(R.id.icon3)
         val icon4: ImageView = view.findViewById(R.id.icon4)
+        val icon5: ImageView = view.findViewById(R.id.icon5)
         val caption1: TextView = view.findViewById(R.id.caption1)
         val caption2: TextView = view.findViewById(R.id.caption2)
         val caption3: TextView = view.findViewById(R.id.caption3)
         val caption4: TextView = view.findViewById(R.id.caption4)
+        val caption5: TextView = view.findViewById(R.id.caption5)
 
         icon1.setOnClickListener {
             val intent = Intent()
@@ -89,6 +91,22 @@ class OtherAppsFragment : Fragment() {
             intent.action = Intent.ACTION_VIEW
             intent.addCategory(Intent.CATEGORY_BROWSABLE)
             intent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.dev.abhinav.movierater")
+            startActivity(intent)
+        }
+
+        icon5.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.dev.abhinav.tennisstats")
+            startActivity(intent)
+        }
+
+        caption5.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_VIEW
+            intent.addCategory(Intent.CATEGORY_BROWSABLE)
+            intent.data = Uri.parse("https://play.google.com/store/apps/details?id=com.dev.abhinav.tennisstats")
             startActivity(intent)
         }
         super.onViewCreated(view, savedInstanceState)
